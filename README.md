@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Nexus3-1.
 ***Nexus*** is an open source repository manager that allows you to proxy , collect and manage your  dependencies. It supports many artifact formats including Java.
 Then we take these binaries that are already uploaded in nexus to ansible playbook. Ansible Playbook is a YAML file integrated in the application code , then deploys it to the CentOS machine.
@@ -34,3 +35,6 @@ MIT License
 =======
 # nexus_oss
 >>>>>>> 9eff486dcd5aa8fc3e9abeb61b820f3363312f39
+=======
+# nexus_oss
+>>>>>>> 88c53601cdc3de663a14202d6050365351f34034
