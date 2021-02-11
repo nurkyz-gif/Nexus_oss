@@ -30,3 +30,7 @@ Selinux= disabled.
 ```
 **License**
 MIT License
+
+www.nurkyz.com
+
+https://github.com/nurkyz-gif/nexus_oss.git
