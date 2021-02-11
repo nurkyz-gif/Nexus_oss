@@ -1,0 +1,23 @@
+Listen 443
+  
+ProxyRequests Off
+ProxyPreserveHost On
+  
+<VirtualHost *:443>
+  SSLEngine on
+
+  
+  SSLCertificateFile /etc/ssl/certs/server.crt
+  SSLCertificateKeyFile /etc/ssl/certs/server.key
+  
+  AllowEncodedSlashes NoDecode
+
+  ServerName kamalov2020.com
+  ServerAdmin admin@example.com
+  ProxyPass / http://localhost:8081/ nocanon
+  ProxyPassReverse / http://localhost:8081/
+  RequestHeader set X-Forwarded-Proto "https"
+  
+  
+  
+</VirtualHost>

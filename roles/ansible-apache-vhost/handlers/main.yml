@@ -1,0 +1,6 @@
+---
+- name: restart_web
+  service:
+    name: "{{ apache_web_srv }}"
+    state: restarted
+    enabled: yes

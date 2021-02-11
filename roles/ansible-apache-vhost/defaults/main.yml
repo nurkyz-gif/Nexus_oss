@@ -1,0 +1,18 @@
+---
+# defaults file for apache
+#
+# DocumentRoot
+apache_docroot: /var/www/html/
+#
+# Domain
+apache_domain: nurkyz.com
+#
+# Vhost file
+vhost_file: vhost
+#
+# Server path to SSL certificate
+ssl_certificate: /etc/ssl/certs/server.crt
+#
+# Server path to SSL certificate key
+ssl_certificate_key: /etc/ssl/certs/server.key
+#

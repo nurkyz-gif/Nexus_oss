@@ -1,0 +1,12 @@
+apache_web_pkg:
+  - httpd
+  - mod_ssl
+  - openssl
+#
+#
+apache_errorlog: "/var/log/httpd/"
+apache_customlog: "/var/log/httpd/"
+#
+apache_vhost_path: /etc/httpd/conf.d/
+#
+apache_web_srv: httpd

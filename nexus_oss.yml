@@ -1,0 +1,18 @@
+- hosts: all
+  tasks:
+  
+  - name: Install OpenJDK
+    import_role:
+      name: ansible-role-openjdk
+  
+  - name: Apache proxy vhost
+    import_role:
+       name: ansible-apache-vhost
+  
+  - name: SSL Selfsigned 
+    import_role:
+      name: ansible-ssl-selfsigned
+  
+  - name: Nexus
+    import_role:
+      name: ansible-role-nexus3

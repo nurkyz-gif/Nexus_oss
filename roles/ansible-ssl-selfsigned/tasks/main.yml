@@ -1,0 +1,6 @@
+- name: Generate self-signed SSL certificate
+  become: yes
+  command:
+    openssl req -new -nodes -x509 -subj "{{ ssl_certificate_subject }}" -days {{ ssl_certificate_days }} -keyout {{ ssl_certificate_key }} -out {{ ssl_certificate }} -extensions v3_ca
+  args:
+    creates: "{{ ssl_certificate }}"
